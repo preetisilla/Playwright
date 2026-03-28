@@ -10,6 +10,12 @@ console.log(testResults); // Output: ["pass", "fail", "pass", "pass"]
 let mixedArray = [42, "Hello", true, null, undefined, { name: "Preeti" }, [1, 2, 3]]; // creates an array with mixed data types
 console.log(mixedArray); // Output: [42, "Hello", true, null, undefined, { name: "Preeti" }, [1, 2, 3]]
 
+let aar1 = new Array(5); // creates an array with a length of 5, but all elements are undefined
+console.log(aar1); // Output: [undefined, undefined, undefined, undefined, undefined]
+
+let arr2 = new Array(1, 2, 3); // creates an array with the specified elements
+console.log(arr2); // Output: [1, 2, 3]
+
 let arr = [10, 20, 30];
 console.log(arr[3]); // Output: undefined
 
