@@ -1,0 +1,2 @@
+let obj = { name: "Alice"}; // creates an object with two properties: name and age
+console.log(Object.getOwnPropertyDescriptors(obj, "name")); // Output: { name: { value: "Alice", writable: true, enumerable: true, configurable: true }, age: { value: 30, writable: true, enumerable: true, configurable: true } } - returns an object containing the descriptors for each own property
