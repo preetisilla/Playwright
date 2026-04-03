@@ -27,7 +27,8 @@ for (let i = a;i>0;i--){
 //  ***
 // *****
 let m = 3;
-for(let i = 1; i <= m; i++) {
+for(let i = 1
+    ; i <= m; i++) {
     let row = "";
     for (let j = 1;j<=m-1;j++){
         row += " ";
