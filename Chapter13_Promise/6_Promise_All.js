@@ -13,7 +13,8 @@ Promise.all([checkAuth, fetchData]) // Takes an array of promises and returns a 
     // alternative
     Promise.all([
         Promise.resolve("User authenticated"), // Creates a promise that is immediately resolved with the value "User authenticated"
-        Promise.resolve("Data fetched successfully") // Creates a promise that is immediately resolved with the value "Data fetched successfully"           
+        Promise.reject("Data fetched successfully"), 
+        Promise.resolve("Posts fetched successfully")
     ]).then(function(results) { // Executes the callback function when all promises are resolved
         console.log(results); // Output: ["User authenticated", "Data fetched successfully"] - logs the array of resolved values from the promises
     }).catch(function(error) { // Executes the callback function if any of the promises in the array are rejected
@@ -22,4 +23,3 @@ Promise.all([checkAuth, fetchData]) // Takes an array of promises and returns a 
         console.log("All operations completed."); // Logs a message indicating that all operations have completed
     });
 
-    
