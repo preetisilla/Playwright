@@ -1,0 +1,12 @@
+function wrapResponse<T>(statusCode:number , Data : T) : {statusCode : number,Data : T}{
+    return {statusCode : statusCode,Data : Data}
+}
+
+let APIResponse1 = wrapResponse<number>(200,35);
+console.log(APIResponse1)
+
+let APIResponse2 = wrapResponse<string>(200,"Preeti");
+console.log(APIResponse2)
+
+let APIResponse3 = wrapResponse<boolean>(200,true);
+console.log(APIResponse3)
